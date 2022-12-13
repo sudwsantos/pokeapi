@@ -1,11 +1,13 @@
 import React from 'react'
-import '../img/pikachu.png';
+import pikachu from '../img/pikachu.png';
 
 const Home = () => {
   return (
     <>
     <h1>Bienvenido maestro pokemón</h1>
-    <img src='picachu.png'alt=''/>
+    <div className='mainfoto'>
+    <img src={pikachu} alt=''/>
+    </div>
     </>
   )
 }
