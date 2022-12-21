@@ -12,22 +12,26 @@ const InformacionPokemon = () => {
       .then((data) => {
         setPokemon(data);
       });
-  }, [id]);
+    }, [id]);
+    console.log(pokemon)
 
   return (
     <>
-      <ul>
-        <li>{pokemon.name}</li>
-      </ul>
       {pokemon.sprites && pokemon.sprites.front_default && (
         <div>
           <img
             className="pokefoto"
             src={pokemon.sprites.front_default}
-            alt="foto pokemon"
+            alt={pokemon.name}
           />
         </div>
       )}
+      <div>
+        <h2>{pokemon.name}</h2>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
     </>
   );
 };

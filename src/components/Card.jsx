@@ -11,7 +11,6 @@ const Card = () => {
     .then((res) => res.json())
     .then((data) => {
       setDetalles(data.url);
-      console.log(data.url)
     })
   }, []);
 
